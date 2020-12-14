@@ -1,0 +1,45 @@
+input[type=email], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+border-radius:15px;}
+form{
+background-color:white;
+float:middle;
+width:400px;
+height:350px;
+border: 1px solid black;
+border-radius:25px;
+border-color:orange;
+margin-top:100px;
+margin-left:425px;
+padding-left:50px;
+padding-top:50px;
+padding-bottom:50px;
+padding-right:50px;
+}
+input[type=submit]:hover {
+  opacity: 0.8;
+  background-color:Orange;
+}
+input[type=reset]:hover {
+  opacity: 0.8;
+background-color:Orange;
+}
+#btn{margin-left:25px;float:right;color:Brown;}
+#btn:hover {
+  
+  color:blue;
+  cursor:pointer;
+}
+
+
+input[type=submit], input[type=reset]
+{
+width:50%;
+background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;}

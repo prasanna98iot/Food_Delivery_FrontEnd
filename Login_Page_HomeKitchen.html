@@ -1,0 +1,94 @@
+<html>
+<head>
+<style>
+input[type=email], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+border-radius:15px;}
+form{
+background-color:white;
+float:middle;
+width:400px;
+height:350px;
+border: 1px solid black;
+border-radius:25px;
+border-color:orange;
+margin-top:100px;
+margin-left:425px;
+padding-left:50px;
+padding-top:50px;
+padding-bottom:50px;
+padding-right:50px;
+}
+input[type=submit]:hover {
+  opacity: 0.8;
+  background-color:Orange;
+}
+input[type=reset]:hover {
+  opacity: 0.8;
+background-color:Orange;
+}
+#btn{margin-left:25px;float:right;color:Brown;}
+#btn:hover {
+  
+  color:blue;
+  cursor:pointer;
+}
+
+
+input[type=submit], input[type=reset]
+{
+width:50%;
+background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;}
+</style>
+<title>Login Page</title>
+</head>
+<body style="background-image:url(loginimg.jpg)">
+<form>
+<label for="uname"><b>Username</b></label><br>
+<input type="email" id="uname" placeholder="Enter your username">
+<br><br>
+<label for="psw"><b>Password</b></label><br>
+<input type="password" id="psw" placeholder="Enter your password">
+<br><br>
+<center><input type="submit" onclick="validation()" value="Login"></center>
+<br>
+<input type=button style="color:Green; cursor:pointer;" value="Signup" onclick="window.open('signup.html')">
+<div  style="float:right">
+<label for="remme" >Remember Me</label>
+<input  type="checkbox" id="remme">
+</div>
+<br>
+<br>
+<input type="reset" style="float:right;" value="Clear All">
+<br><br>
+<button id="btn" onclick="fpswpage()">Forgot Password</button>
+<br><br>
+<footer>&copy <i> Home Kitchen 2020, </i>India</footer>
+
+</body>
+<script>
+function fpswpage(){
+window.open("forgot_password.html");
+}
+function validation()
+{
+var a = document.getElementById("uname").value;
+var b = document.getElementById("psw").value;
+if(a=="test@hk.com" && b=="asd")
+{
+alert("success");
+}
+else
+{
+alert("Please Enter Correct Username & Password.");
+}
+}
+</script>
+</html>

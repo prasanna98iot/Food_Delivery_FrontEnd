@@ -1,0 +1,56 @@
+
+body
+{
+	background-image:url(bgimage.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+marquee
+{
+	color:Yellow; 
+	font-size:30;
+	font-weight:4000;
+	font-family:Gabriola;
+	background-image: linear-gradient(#02aab0, #00cdac);
+}
+
+#h2paymentname
+{
+	font-family:'Cooper';
+	text-align:center;
+	font-size:30;
+	text-decoration: underline;
+}
+
+#paymenttitles
+{
+	color:White; 
+	font-family:'Goudy Old Style';
+	text-align:center;
+	font-size:25;
+	font-variant:bold;
+	
+	
+}
+
+#cardrec 
+{
+  	width:300px;
+	height:400px;
+	border:1px solid black;
+	padding-left: 8px;	
+}
+
+#formid
+{
+	font-family:Cambria;
+	font-weight:bold;
+	
+}
+form {
+  text-align: center;
+}	
+
+
+
+

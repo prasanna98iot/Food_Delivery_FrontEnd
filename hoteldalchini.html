@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>Dalchini</title>
+<style>
+body
+{
+background-color:orange;
+font-family:Arial;
+}
+table, th, td
+{
+border-radius: 5px;
+width:50%;
+border:1px solid black;
+text-align:center;
+}
+tr
+ {
+background-color: #f2f2f2;
+}
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
+<body>
+<h2>DALCHINI RESTAURANTS </h2>
+
+<ol>
+
+<li> VEG BRIYANI -- Price:90 &nbsp &nbsp <input type="number" id="i1" min=1 max=10> </li>
+<br>
+<li> VEG RICE-- Price:30 &nbsp &nbsp<input type="number" id="i2" min=1 max=10> </li>
+<br>
+<li> PAROTTA KURMA-- Price:40 &nbsp &nbsp <input type="number" id="i3" min=1 max=10> </li>
+<br>
+<li> CAULIC FLOWER 65-- Price:50 &nbsp &nbsp<input type="number" id="i4" min=1 max=10> </li>
+<br>
+<li> SUKKU COFFEE -- Price:60 &nbsp &nbsp <input type="number" id="i5" min=1 max=10> </li>
+<br>
+<li> TANDOORI PULAV--- Price:80 &nbsp &nbsp <input type="number" id="i6" min=1 max=10> </li>
+<br><br>
+<button onclick="billlist()">Order</button>
+<br><br>
+<table style="border: 1px solid orange;">
+  <tr>
+    <th>Restaurant Name:</th>
+    <th>Items</th>
+    <th>Quantity</th>
+    <th>Price</th>
+  </tr>
+
+  <tr>
+    <td rowspan="5">DALCHINI RESTAURANTS</td>
+    <td>VEG BRIYANI</td>
+    <td id="q1">0</td>
+    <td id="p1">0</td>
+  </tr>
+  <tr>
+    <td>PAROTTA KURMA</td>
+    <td id="q2">0</td>
+    <td id="p2">0</td>
+  </tr>
+
+</table>
+<h3> Total Price Payable: <div id=price>0</div></h3>
+</ol>
+<a href="home-payment.html">Payments</a>
+</body>
+<script>
+function billlist(){
+var a= document.getElementById("i1").value;
+var b=document.getElementById("i3").value;
+
+document.getElementById("q1").innerHTML = a;
+document.getElementById("q2").innerHTML = b;
+a = a*90;
+document.getElementById("p1").innerHTML = a;
+b = b*30;
+document.getElementById("p2").innerHTML = b;
+document.getElementById("price").innerHTML = a+b;
+}
+</script>
+</html>

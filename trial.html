@@ -1,0 +1,101 @@
+<html>
+<head>
+<link rel="stylesheet" href="trialstyle.css">
+<title> User Page - Tech Foodie </title>
+</head>
+
+<body>
+	<div id="rtc">
+		<img src="logo3.png">
+<br><br>
+<marquee id="marq" direction="up" scrollamount=6 >Home Kitchen Foods</marquee>
+
+<pre>
+<p id=para> Order Home like food from your favouite restaurants near you. </p></pre>
+<div><pre>
+        <input type="text" id="hsearchbar" placeholder="Enter Your Location">  <select style="border:2px solid orange;height:30px;font-size:18px;background-color:orange;color:white;font-family:Arial Unicode MS"><option> Select City ...</option>
+<option> Chennai </option>
+<option> Vandalur </option>
+<option> Tambaram </option>
+<option> Bangalore </option>
+<option> Hosur </option>
+<option> Hyderabad </option>
+<option> Vishakapatnam </option>
+
+</select>
+</pre>
+</div>
+	</div>
+
+	<div id="photo"><img src="image1Dosa.jpg"></div>
+	<div class="navbar">
+		<a href="#scndarea">Home</a>
+		<a href="Login_Page_HomeKitchen.html">Login</a>
+		<a style="background-color:black;color:white;" href="signup.html">Signup</a>
+		<a href="#thirdarea">About Us</a>
+	</div>
+	
+	<div style="margin-top:350px">
+<hr style="border:0.5px solid orange;">
+
+<div id="scndarea">
+    <div class="inline-block">&nbsp &nbsp &nbsp
+        <a  href="hotelranga.html"><img src ="rangainn.jpg" alt="Ranga Residencies"></a>
+    </div>
+
+    <div class="inline-block"> &nbsp &nbsp &nbsp
+       <a  href="hoteldalchini.html"> <img src ="dalchini.jpg" alt="Dalchini Restaurants"></a>
+    </div>
+
+    <div class="inline-block"> &nbsp &nbsp &nbsp
+        <a  href="hotelsaravana.html"><img src ="saravanabhava.jpg" alt="Saravana Bhava"></a>
+    </div>
+</div>
+
+	</div>
+<hr style="border:0.5px solid orange;">
+<div id = "thirdarea">
+<div style="float:left;margin-right:auto;border:1px solid orange;border-radius:15px; padding-top:50;padding-bottom:50;padding-right:10;padding-left:10">
+<h2>Contact Us</h2>
+<p style="font-family:Arial;">Name: Mr. Prasanna Janarthanam <br>
+<i>Founder & Developer of Home Kitchen, India</i><br><br>
+Email: homekitchenindia@hk.com <br>
+Phone: +91 - 9876543210</p>
+
+
+<p> &copy <i>Home Kitchen 2020</i>, India</p>
+</div>
+	<div class="imagecontainer">
+		<img id=abt src="aboutdj.jpg">
+		<div class="centered"><h3 style="font-family:Arial Rounded MT;text-decoration:underline;">About Us</h3><p>
+<i>Home Kitchen</i>, is an imaginative food order & delivery company from the minds of Mr.Prasanna Janarthanam . 
+With an intention of serving home like food to Customers with Love & Care. <br></p>
+<h3 style="font-family:Arial Rounded MT;text-decoration:underline;">About the Author</h3>
+<p>Home Kitchen website is individually developed by Mr. Prasanna Janarthanam with the support of his family. Mr.Prasanna is a B.Tech Graduate Electronics, and Communication Engineer 2016-2020 passionate about technology and electronics design. A strong individual with good self-learning capabilities, quick leaner and a team player.</p>
+<h3 style="font-family:Arial Rounded MT;text-decoration:underline;">
+</p></div>
+	</div>
+</div>
+
+
+
+</body>
+<script>
+     var example = ["Craving Food ??", "Late Night at Office ?? ", "Tired to Cook ??", "Hungry ??", "Unexpected Guests !!"];
+
+        textSequence(0);
+        function textSequence(i) {
+
+            if (example.length > i) {
+                setTimeout(function() {
+                    document.getElementById("marq").innerHTML = example[i];
+                    textSequence(++i);
+                }, 3000); // 1 second (in milliseconds)
+
+            } else if (example.length == i) { // Loop
+                textSequence(1);
+            }
+
+        }
+</script>
+</html>

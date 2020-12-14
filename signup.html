@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Signup HomeKitchen</title>
+<link rel="stylesheet" href="signup.css">
+</head>
+<body style="background-image:url(3.jpg)">
+
+<form>
+<div id="slogan">
+<center><h3> <u>Atithi Devo Bhava</u></h3> </center>
+<center><h3> "The Guest is Equivalent to God" </h3> </center>
+</div>
+<label for="runame"><b>New Username</b></label><br>
+<input type="email" id="runame" placeholder="Enter your new username ... Email goes here !!" required>
+<br><br>
+<label for="phone"><b>Mobile Number</b></label><br>
+<input type="tel" id="phone" placeholder="Enter your Mobile Number ..." required>
+<br><br>
+<label for="rpsw"><b>New Password</b></label><br>
+<input type="password" id="rpsw" placeholder="Enter your new password" required>
+<br><br>
+<label for="repsw"><b>Confirm Password</b></label><br>
+<input type="password" id="repsw" placeholder="Retype your password" required>
+<br><br>
+<center><input type="submit" onclick="alertmsg()" value="Register"></center>
+<br>
+<p><h4>Welcome to Foodiee Family, &nbspHave Your Great Food. </h4>  வாங்க சாப்பிடலாம், &nbsp स्वागत है भोजन का | </p>
+<footer>&copy <i> Home Kitchen 2020, </i>India</footer>
+</form>
+</body>
+<script>
+function alertmsg()	
+	{
+		var x = document.getElementById("rpsw").value;
+		var y = document.getElementById("repsw").value;
+
+
+		if(x==y)
+		{
+		alert("Activation Link has been sent to your Registered Email & Mobile Number. Thanks for joining in Home Kitchen Family !!");
+		window.open("Login_Page_HomeKitchen.html");
+		}
+		else
+		{
+		alert("Password doesn't match. Re Enter the Password");
+		return false;
+		}
+
+	}
+		
+
+</script>
+
+
+
+</html>

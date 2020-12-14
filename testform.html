@@ -1,0 +1,30 @@
+<html>
+<head>
+</head>
+<body>
+<form>
+email:
+<input type="email" id="uname">
+<br><br>
+password:
+<input type="pass" id="psw">
+<br><br>
+<input type="submit" onclick="validation()">
+</body>
+
+<script>
+function validation()
+{
+var a = document.getElementById("uname").value;
+var b = document.getElementById("psw").value;
+if(a=="test@hk.com" && b=="asd")
+{
+alert("Correct");
+}
+else
+{
+alert("Please Enter Correct Username & Password.");
+}
+}
+</script>
+</html>
